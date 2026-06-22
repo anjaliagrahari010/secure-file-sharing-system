@@ -1,0 +1,96 @@
+/* Global Dark Theme */
+
+body{
+    background-color:#0f172a;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+
+.hero-section{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #111827
+    );
+}
+
+/* Headings */
+
+.hero-title{
+    font-size:4rem;
+    font-weight:700;
+    color:#ffffff;
+}
+
+.hero-text{
+    color:#cbd5e1;
+    font-size:1.2rem;
+}
+
+/* Buttons */
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+/* Cards */
+
+.card{
+    background:#1e293b;
+    border:none;
+    color:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Feature Section */
+
+.features{
+    background:#111827;
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    color:#cbd5e1;
+}
+
+/* Image */
+
+.hero-image{
+    max-width:100%;
+    border-radius:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:2.5rem;
+        text-align:center;
+    }
+
+    .hero-text{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        text-align:center;
+    }
+}

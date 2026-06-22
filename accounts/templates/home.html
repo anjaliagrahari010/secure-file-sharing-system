@@ -1,0 +1,142 @@
+
+{% extends 'base.html' %}
+{% block title %}
+Home | VaultShare
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<!-- Main Section -->
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1 class="hero-title animate__slideInRight">
+                    Secure File Sharing Made Easy
+                </h1>
+
+                <p class="hero-text my-4 ">
+                    Upload, encrypt, store and securely share files with trusted users.
+                    Protect your data with advanced encryption and access control.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="{% url 'login' %}" class="btn btn-primary btn-lg">
+                        Login / Register
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+                <img src="{% static 'img/secure_file_sharing_hero_svg.svg' %}"
+                     class="img-fluid hero-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Features Section -->
+<section class="py-5"><section class="py-5" style="background-color:#111827;">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold text-white mb-4"  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            Why Choose SecureShare?
+        </h2>
+
+        <p class="text-light mx-auto" style="max-width:800px;" animate__slideInRight>
+            SecureShare provides a reliable platform for uploading,
+            encrypting, managing, and sharing sensitive files securely.
+            It ensures that only authorized users can access shared data.
+        </p>
+
+    </div>
+
+</section>
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            Key Features
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body text-center">
+
+                        <h4>🔒 Encryption</h4>
+
+                        <p>
+                            Files are encrypted before storage to ensure
+                            confidentiality and protection.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body text-center">
+
+                        <h4>📤 Secure Sharing</h4>
+
+                        <p>
+                            Share files with selected users through secure
+                            access control mechanisms.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body text-center">
+
+                        <h4>☁ Safe Storage</h4>
+
+                        <p>
+                            Maintain encrypted files safely with quick
+                            access whenever required.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5" style="background-color:#111827;">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold text-white mb-4">
+            Why Choose SecureShare?
+        </h2>
+
+        <p class="text-light mx-auto" style="max-width:800px;">
+            SecureShare provides a reliable platform for uploading,
+            encrypting, managing, and sharing sensitive files securely.
+            It ensures that only authorized users can access shared data.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
